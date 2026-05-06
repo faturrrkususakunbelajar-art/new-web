@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiFood | Solusi Digital & Kuliner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Digi<span>Food</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#" onclick="toggleCart()">Keranjang (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Kenyang di Perut, Lancar di Digital.</h1>
+            <p>Pesan menu favoritmu dan dapatkan layanan digital terbaik hanya di DigiFood.</p>
+            <a href="#menu" class="btn-main">Lihat Semua Menu</a>
+        </div>
+    </section>
+
+    <main id="menu">
+        <h2 class="section-title">Daftar Menu Kami</h2>
+        <div class="product-grid" id="product-container">
+            </div>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleCart()">&times;</span>
+            <h2>Pesanan Anda</h2>
+            <div id="cart-items">
+                </div>
+            <div class="cart-footer">
+                <h3>Total: Rp <span id="total-price">0</span></h3>
+                <button class="btn-wa" onclick="sendToWA()">
+                    <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 DigiFood Digital Solutions. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
